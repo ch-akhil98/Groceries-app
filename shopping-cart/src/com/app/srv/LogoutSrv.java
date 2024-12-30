@@ -31,7 +31,6 @@ public class LogoutSrv extends HttpServlet {
 
 		session.setAttribute("username", null);
 		session.setAttribute("password", null);
-		/* session.setAttribute("usertype", null); */
 		session.setAttribute("userdata", null);
 
 		RequestDispatcher rd = request.getRequestDispatcher("login.jsp?message=Successfully Logged Out!");
